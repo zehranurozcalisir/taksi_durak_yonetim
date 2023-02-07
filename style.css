@@ -1,0 +1,853 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.kapsayici{
+  
+    width: 100%;
+    height:1300px;
+    background:linear-gradient(
+        to top ,
+        rgb(213,213,213),
+        rgb(34,39,35)
+      )
+    
+
+    
+    
+}
+.giris{
+    width: 800px;
+    height: 600px;
+    float: right;
+    margin-top: 150px;
+}
+.girisekrani{
+   
+    width: 100px;
+    height: 50px;
+    margin-left: 100px;
+    padding-top: 300px;
+}
+.girisekranidiv1{
+    display: flex;
+    margin: 10px;
+
+}
+.girisekranidiv1 .text{
+   background-color: rgb(235, 235, 235) ;
+   border-radius: 10px;
+   width: 300px;
+   height: 50px;
+   border-style:hidden;
+   
+}
+ .button{
+    background-color: rgb(255, 242, 0) ;
+    border-radius: 10px;
+    
+    height:50px;
+    width: 300px;
+    border-style:hidden;
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+ }
+
+.icon{
+    width: 100px;
+    height: 100px;
+}
+.orta{
+    background-color: rgb(221, 221, 221);
+    width: 1200px;
+    
+    margin: auto;
+   
+}
+.orta .ortaust{
+    background-color: rgb(34,34,34);
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    
+    
+    
+    
+}
+.orta .ortaalt{
+    background-color: rgb(221, 221, 221);
+    width: 1200px;
+    height: 1200px;
+    
+    
+} 
+.orta .ortaust .icon{
+    width: 300px;
+    height: 100px;
+}
+.orta .ortaust .ortaustsag{
+position: absolute;
+right: 0px;
+margin-right: 200px;
+margin-top: 40px;
+width: 500px;
+height: 50px;
+
+padding: 5px;
+text-align: center;
+line-height: 50px;
+display: flex;
+}
+.orta .ortaust .ortaustsag .menuyazi {
+    margin-left: 5px;
+    border-right-color:rgb(184, 183, 183);
+    border-right-width: 2px;
+    border-right-style: dashed;
+    padding-right: 10px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color:rgb(213,213,213);
+    margin-right:10px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.orta .ortaust .ortaustsag .menuyazi a{
+    margin-left: 5px;
+    
+    padding-right: 10px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color:rgb(213,213,213);
+    margin-right:10px ;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+.orta .ortaalt .ortaaltust{
+    background-color:#ffe640;
+    width: 1200px;
+    height: 50px;
+   text-align: center;
+   line-height: 50px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 30px;
+   color:rgb(34,34,34);
+  
+   
+}
+    
+ 
+.orta .ortaalt .ortaaltalt{
+    
+    width:1200px;
+    
+   text-align: center;
+   line-height: 50px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 30px;
+   position:absolute;
+   height: 100%;
+   
+    
+} 
+.orta .ortaalt .ortaaltalt #chartContainer{
+    width:500px;
+    height:250px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-style: groove;
+    border-width: 2px;
+    
+
+    
+   margin-right: 10px;
+    
+} 
+.orta .ortaalt .ortaaltalt #chartContainer2{
+    width:500px;
+    height:250px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-style: groove;
+    border-width: 2px;
+    
+
+   
+   
+    
+} 
+.orta .ortaalt .ortaaltalt #chartContainer3{
+    width:500px;
+    height:250px;
+    margin-left:40px;
+    border-style: groove;
+    border-width: 2px;
+    margin-right: 10px;
+   
+    
+} 
+.orta .ortaalt .ortaaltalt #chartContainer4{
+    width:500px;
+    height:250px;
+    margin-left:40px;
+    border-style: groove;
+    border-width: 2px;
+    
+    
+} 
+.grafikust{
+    display: flex;
+    margin-left: 50px;
+    
+    margin-top: 10px;
+}
+.grafikalt{
+    display: flex;
+    margin-left: 50px; 
+}
+
+.randevuust{
+    display: flex;
+    
+    height: 500px;
+    width: 100%;
+}
+.mapust{
+    display: flex;
+    
+    height: 500px;
+    width: 100%;
+
+}
+
+.randevuust .randevuustsol{
+   
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 450px;
+    width: 400px;
+
+}
+
+.randevuust .randevuustsag{
+    
+    height: 450px;
+    width: 660px;
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+}
+
+.randevudiv1{
+    margin: 20px;
+    margin-left: 30px;
+}
+
+.randevuustsag .randevudiv1 .text{
+   background-color: rgb(235, 235, 235) ;
+   border-radius: 10px;
+   width: 250px;
+   height: 50px;
+
+   border-style:hidden;
+}
+
+.buttonekle{
+    background-color: rgb(255, 242, 0) ;
+    border-radius: 10px;
+    height:50px;
+    width: 250px;
+    border-style:hidden;
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-top: 20px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+ }
+
+.randevualt{
+    margin: auto;
+    width: 100%;
+    height:300px;
+}
+.grafik1{
+    
+    border-radius: 10px;
+    width: 540px;
+    height: 1000px;
+    margin-top: 30px;
+   
+}
+
+.grafik2{
+    
+    border-radius: 10px;
+    width: 525px;
+    height: 1000px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#grafik2{
+    margin: auto;
+    width: 400px;
+   margin-top: 50px;
+}
+#grafik1{
+    margin: auto;
+    width: 300px;
+   margin-top: 50px;
+   
+}
+
+#personel{
+    width: 575px;
+    font: "Trebuchet MS", Verdana, Arial, Helvetica,
+    sans-serif;
+    border: 5px solid #505050;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    padding:5px;
+    background: #C1DAD7;
+    border-collapse: collapse;
+    font-size: 10px;
+    
+    }
+     
+    #personel th{
+    color: #41AA7F;
+    padding: 6px 6px 6px 12px;
+     
+    }
+     
+    #personel td{
+    padding: 6px 6px 6px 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    }
+    #personel tr{
+    color: #112233;
+    background: #fff;
+    }
+    #personel tr:hover{
+    background:#202020;
+    color:#fff;
+    }  
+
+.pers{
+    margin: auto;
+    margin-left: 27px;
+}
+    #randevuPersonel{
+        width:100%;
+        font: "Trebuchet MS", Verdana, Arial, Helvetica,
+        sans-serif;
+        border: 5px solid rgb(255, 242, 0);  
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: left;
+        padding:5px;
+        background: #C1DAD7;
+        border-collapse: collapse;
+        font-size: 10px;
+        
+        
+        }
+       
+         
+        #randevuPersonel th{
+        color: rgb(117, 112, 20);
+        padding: 6px 6px 6px 12px;
+         
+        }
+         
+        #randevuPersonel td{
+        padding: 6px 6px 6px 12px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        }
+        #randevuPersonel tr{
+        color: #112233;
+        background: #fff;
+        }
+        #randevuPersonel tr:hover{
+        background:#202020;
+        color:#fff;
+        }  
+
+
+#personelA{
+    width: 525px;
+    
+    font: "Trebuchet MS", Verdana, Arial, Helvetica,
+    sans-serif;
+    border: 5px solid #505050;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: left;
+   
+    background: #C1DAD7;
+    border-collapse: collapse;
+    font-size: 11px;
+    }
+     
+    #personelA th{
+    color: black;
+    padding: 6px 6px 6px 12px;
+     
+    }
+     
+    #personelA td{
+    padding: 6px 6px 6px 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    }
+    #personelA tr{
+    color: #112233;
+    background: #fff;
+    }
+    #personelA tr:hover{
+    background:rgb(255, 242, 0);
+    color:#fff;
+    }  
+
+    .sofListe{
+        margin-left: 55px;
+        margin-right:55px;
+    }
+
+    .musListe{
+        margin-left: 55px;
+        margin-right:55px;
+    }
+
+    .randevuListe{
+        margin-left: 55px;
+        margin-right:55px;
+    }
+    #personelB{
+        width: 525px;
+    
+        font: "Trebuchet MS", Verdana, Arial, Helvetica,
+        sans-serif;
+        border: 5px solid #505050;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: left;
+        padding:5px;
+        background: #C1DAD7;
+        border-collapse: collapse;
+        font-size: 15px;
+        }
+         
+        #personelB th{
+        color: black;
+        padding: 6px 6px 6px 12px;
+         
+        }
+         
+        #personelB td{
+        padding: 6px 6px 6px 12px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        }
+        #personelB tr{
+        color: #112233;
+        background: #fff;
+        }
+        #personelB tr:hover{
+        background:rgb(255, 242, 0);
+        color:#fff;
+        }
+
+    .sofListe{
+        margin-left: 55px;
+        margin-right:55px;
+    }
+
+    .musListe{
+        margin-left: 55px;
+        margin-right:55px;
+    }
+
+    .randevuListe{
+        margin-left: 55px;
+        margin-right:55px;
+    }
+    
+    
+                .ekle{
+                    background-color: rgb(255, 242, 0);
+                    border:2px;
+                    border-radius: 4px;
+                    border-color: black;
+                    border-style: solid;
+                }
+
+                .eklee{
+                    background-color: rgb(255, 242, 0);
+                    border:2px;
+                    border-radius: 4px;
+                    border-color: black;
+                    border-style: solid;
+                }
+
+                .search{
+                    width: 155px;
+                    margin-left: 2px;
+                }
+.scroll{
+    height: 30em;
+    overflow-y: auto;
+    white-space: nowrap;
+    
+}
+.scroll7{
+    width: 540px;
+    
+    height: 625px;
+    overflow-y: auto;
+    white-space: nowrap;
+    
+}
+.tablolarTablo2{
+    height: 600px;
+    overflow-y: auto;
+    white-space: nowrap;
+    margin-top: 50px;
+    
+}
+.tablolarTablo1{
+    height: 600px;
+    overflow-y: auto;
+    white-space: nowrap;
+    margin-top: 150px;
+    
+    
+}
+.search3{
+   margin-top: 30px;
+    background-color: rgb(235, 235, 235) ;
+   border-radius: 5px;
+   width: 250px;
+   height: 50px;
+    border-color: rgb(255, 242, 0);
+   border-style:solid;
+   
+}
+.ekle{
+    background-color: rgb(255, 242, 0);
+    border:2px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: hidden;
+    width: 252px;
+    height: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:5px;
+}
+
+
+
+.eklee{
+    background-color: rgb(255, 242, 0);
+    border:2px;
+    border-radius: 4px;
+    border-color: black;
+    border-style: solid;
+}
+
+.search{
+    width: 155px;
+    margin-left: 2px;
+    
+}
+.sofordiv{
+width: 100px;
+height: 50px;
+}
+.text1{
+background-color: rgb(235, 235, 235) ;
+width: 250px;
+height: 40px;
+margin-left: 140px;
+border:2px;
+border-radius: 10px;
+border-color: black;
+border-style: hidden;
+margin-top:5px;
+
+}
+.text7{
+    background-color: rgb(235, 235, 235) ;
+    width: 250px;
+    height: 40px;
+    
+    border:2px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    margin-top:10px;
+    border-color:rgb(255, 242, 0);
+    
+    }
+
+.sofListe{
+margin-right:35px;
+margin-left:30px;
+color: white;
+
+font-size: 20px;
+}
+
+.soforListe{
+width: 250px;
+height: 50px;
+background-color:rgb(34,34,34);
+margin-left: 140px;
+border-radius: 15px;
+}
+
+.randevuListe{
+margin-right:35px;
+margin-left:30px;
+color: white;
+
+font-size: 20px;
+}
+.randListe{
+width: 250px;
+height: 50px;
+background-color:rgb(34,34,34);
+margin-left: 140px;
+border-radius: 15px;
+}
+
+.ara{
+width: 252px;
+height: 40px;
+margin-left: 68px;
+margin-top:8px;
+border-radius: 10px;
+border-color: rgb(34,34,34);
+
+}
+        
+#personelm{
+    width: 525px;
+    
+    font: "Trebuchet MS", Verdana, Arial, Helvetica,
+    sans-serif;
+    border: 5px solid #505050;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+   
+    background: #C1DAD7;
+    border-collapse: collapse;
+    font-size: 11px;
+    }
+     
+    #personelm th{
+    color: #41AA7F;
+    padding: 6px 6px 6px 12px;
+     
+    }
+     
+    #personelm td{
+    padding: 6px 6px 6px 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    }
+    #personelm tr{
+    color: #112233;
+    background: #fff;
+    }
+    #personelm tr:hover{
+    background:#202020;
+    color:#fff;
+    }  
+
+    .avantInput{
+        
+        
+        background-color: white;
+border:2px;
+border-radius: 10px;
+border-color: black;
+border-style: hidden;
+width: 252px;
+height: 40px;
+
+font-size: 20px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .ekle1{
+        border:2px;
+        border-radius: 10px;
+        border-color: black;
+        border-style: hidden;
+        width: 252px;
+        height: 40px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        font-size: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top:5px;
+    }
+    .grafikk1{
+        border-radius: 10px;
+        margin-top: -15px;
+       
+    }
+    .grafikk3{
+        border-radius: 10px;
+        margin-top: -15px;
+       
+    }
+    .grafikk4{
+       
+        border-radius: 10px;
+        margin-left: 50px;
+        margin-top: -500px;
+        margin-right: 50px;
+       
+    }
+    .grafikk2{
+        border-radius: 10px;
+        margin-left:-450px;
+        margin-top: 260px;
+    }
+    #grafikk2{
+        margin: auto;
+        width: 500px;
+       margin-top: 50px;
+       margin-left:-50px;
+    }
+    #grafikk1{
+        margin: auto;
+        width: 500px;
+       margin-top: 50px;
+       
+    }
+    #grafikk3{
+        margin: auto;
+        height: 250px;
+        margin-top: 50px;
+    }
+    .eklee{
+        background-color: rgb(255, 242, 0);
+        border:2px;
+        border-radius: 4px;
+        border-color: black;
+        border-style: solid;
+    }
+    .eklee{
+        background-color: rgb(255, 242, 0);
+        border:2px;
+        border-radius: 10px;
+        border-color: black;
+        border-style: hidden;
+        width: 252px;
+        height: 40px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        font-size: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top:5px;
+    }
+    
+    .map{
+        margin-left:300px;
+        margin-top:30px;
+       
+        height: 450px;
+       
+    
+    }
+.menu{
+    margin-left: 300px;
+    border-right-color:rgb(184, 183, 183);
+    border-right-width: 2px;
+    border-right-style: dashed;
+    padding-right: 10px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color:rgb(213,213,213);
+    margin-right:10px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.menu a{
+    margin-left: 5px;
+    
+    padding-right: 10px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color:rgb(213,213,213);
+    margin-right:10px ;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+.arama{
+    margin-top:450px;
+    margin-left:30px;
+    background-color: rgb(235, 235, 235) ;
+   border-radius: 5px;
+   width: 250px;
+   height: 50px;
+    border-color: rgb(255, 242, 0);
+   border-style:solid;
+}
